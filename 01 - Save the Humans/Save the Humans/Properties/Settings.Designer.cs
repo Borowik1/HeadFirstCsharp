@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace HeadFirstCsharp_01.Properties
+namespace Save_the_Humans.Properties
 {
 
 

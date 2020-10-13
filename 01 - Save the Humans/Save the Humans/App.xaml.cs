@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace HeadFirstCsharp_01
+namespace Save_the_Humans
 {
     /// <summary>
     /// Логика взаимодействия для App.xaml

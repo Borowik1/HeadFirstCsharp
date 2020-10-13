@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{AA2ECECE-AC38-4F54-B1D8-98C0C79FE868}</ProjectGuid>
+    <ProjectGuid>{4AA09537-C8D0-4929-8B0F-61DC23900E8F}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>HeadFirstCsharp_01</RootNamespace>
-    <AssemblyName>HeadFirstCsharp_01</AssemblyName>
+    <RootNamespace>Save_the_Humans</RootNamespace>
+    <AssemblyName>Save the Humans</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
