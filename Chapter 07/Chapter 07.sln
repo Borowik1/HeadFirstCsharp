@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.30611.23
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01 - Clown", "01 - Clown\01 - Clown.csproj", "{6F1A2950-CAF5-46D6-A149-CE740C5A77E0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02 - Planet Mission", "02 - Planet Mission\02 - Planet Mission.csproj", "{071F4C34-6CA3-4307-B21E-11487D2A7CBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03 - Hide And Seek", "03 - Hide And Seek\03 - Hide And Seek.csproj", "{1BD07205-362B-42C1-BF55-1B73E8C82A3A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{6F1A2950-CAF5-46D6-A149-CE740C5A77E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6F1A2950-CAF5-46D6-A149-CE740C5A77E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6F1A2950-CAF5-46D6-A149-CE740C5A77E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{071F4C34-6CA3-4307-B21E-11487D2A7CBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{071F4C34-6CA3-4307-B21E-11487D2A7CBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{071F4C34-6CA3-4307-B21E-11487D2A7CBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{071F4C34-6CA3-4307-B21E-11487D2A7CBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BD07205-362B-42C1-BF55-1B73E8C82A3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BD07205-362B-42C1-BF55-1B73E8C82A3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BD07205-362B-42C1-BF55-1B73E8C82A3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BD07205-362B-42C1-BF55-1B73E8C82A3A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
