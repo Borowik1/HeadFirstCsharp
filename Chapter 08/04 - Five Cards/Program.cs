@@ -20,7 +20,6 @@ namespace _04___Five_Cards
             Console.WriteLine("Five random cards:");
             Console.WriteLine("");
 
-
             foreach (Cards item in cards)
             {
                 Console.WriteLine(item.Name);
