@@ -58,10 +58,5 @@ namespace _09___Go_Fish_
             else
                 UpdateForm();
         }
-
-        private void buttonStart_Click_1(object sender, EventArgs e)
-        {
-
-        }
     }
 }

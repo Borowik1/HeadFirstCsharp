@@ -89,7 +89,7 @@ namespace _09___Go_Fish_
         }
         public Deck PullOutValues(Values value)
         {
-            Deck deckToReturn = new Deck(new Card[] { });
+            Deck deckToReturn = new Deck();
             for (int i = cards.Count - 1; i >= 0; i--)
                 if (cards[i].Value == value)
                     deckToReturn.AddCard(Deal(i));
@@ -110,5 +110,6 @@ namespace _09___Go_Fish_
         {
             cards.Sort(new CardComparer_byValue());
         }
+        public int Count { get { return cards.Count; } }
     }
 }

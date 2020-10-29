@@ -28,5 +28,13 @@ namespace _09___Go_Fish_
         {
             return Name;
         }
+
+        public static string Plural(Values value)
+        {
+            if (value == Values.Six)
+                return "Sixes";
+            else
+                return value.ToString() + "s";
+        }
     }
 }

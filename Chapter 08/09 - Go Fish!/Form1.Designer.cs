@@ -34,10 +34,10 @@
             this.listHand = new System.Windows.Forms.ListBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textProgress = new System.Windows.Forms.ListBox();
             this.buttonAsk = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBooks = new System.Windows.Forms.ListBox();
+            this.textProgress = new System.Windows.Forms.TextBox();
+            this.textBooks = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -64,7 +64,7 @@
             this.buttonStart.TabIndex = 2;
             this.buttonStart.Text = "Start the game!";
             this.buttonStart.UseVisualStyleBackColor = true;
-            this.buttonStart.Click += new System.EventHandler(this.buttonStart_Click_1);
+            this.buttonStart.Click += new System.EventHandler(this.buttonStart_Click);
             // 
             // listHand
             // 
@@ -92,15 +92,6 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Game progress";
             // 
-            // textProgress
-            // 
-            this.textProgress.FormattingEnabled = true;
-            this.textProgress.Location = new System.Drawing.Point(13, 74);
-            this.textProgress.MultiColumn = true;
-            this.textProgress.Name = "textProgress";
-            this.textProgress.Size = new System.Drawing.Size(196, 160);
-            this.textProgress.TabIndex = 6;
-            // 
             // buttonAsk
             // 
             this.buttonAsk.Enabled = false;
@@ -110,6 +101,7 @@
             this.buttonAsk.TabIndex = 7;
             this.buttonAsk.Text = "Ask for a card";
             this.buttonAsk.UseVisualStyleBackColor = true;
+            this.buttonAsk.Click += new System.EventHandler(this.buttonAsk_Click);
             // 
             // label4
             // 
@@ -120,14 +112,23 @@
             this.label4.TabIndex = 8;
             this.label4.Text = "Books";
             // 
+            // textProgress
+            // 
+            this.textProgress.Location = new System.Drawing.Point(13, 74);
+            this.textProgress.Multiline = true;
+            this.textProgress.Name = "textProgress";
+            this.textProgress.ReadOnly = true;
+            this.textProgress.Size = new System.Drawing.Size(196, 164);
+            this.textProgress.TabIndex = 10;
+            // 
             // textBooks
             // 
-            this.textBooks.FormattingEnabled = true;
             this.textBooks.Location = new System.Drawing.Point(13, 258);
-            this.textBooks.MultiColumn = true;
+            this.textBooks.Multiline = true;
             this.textBooks.Name = "textBooks";
+            this.textBooks.ReadOnly = true;
             this.textBooks.Size = new System.Drawing.Size(196, 95);
-            this.textBooks.TabIndex = 9;
+            this.textBooks.TabIndex = 11;
             // 
             // Form1
             // 
@@ -135,9 +136,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(348, 369);
             this.Controls.Add(this.textBooks);
+            this.Controls.Add(this.textProgress);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.buttonAsk);
-            this.Controls.Add(this.textProgress);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.listHand);
@@ -161,10 +162,10 @@
         private System.Windows.Forms.ListBox listHand;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ListBox textProgress;
         private System.Windows.Forms.Button buttonAsk;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ListBox textBooks;
+        private System.Windows.Forms.TextBox textProgress;
+        private System.Windows.Forms.TextBox textBooks;
     }
 }
 
