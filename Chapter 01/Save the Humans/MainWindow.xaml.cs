@@ -25,6 +25,7 @@ namespace Save_the_Humans
 
             targetTimer.Tick += TargetTimer_Tick;
             targetTimer.Interval = TimeSpan.FromSeconds(.1);
+            playArea.Children.Remove(gameOverText);
 
         }
 
