@@ -1,0 +1,40 @@
+﻿<Window x:Class="_01___Baseball.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_01___Baseball"
+        mc:Ignorable="d"
+        Title="Baseball simulator" Height="300" Width="400">
+    <Window.Resources>
+        <local:BaseballSimulator x:Key="basebalSimulator"/>
+    </Window.Resources>
+
+    <Grid DataContext="{StaticResource ResourceKey=basebalSimulator}">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Margin="5" Grid.RowSpan="2">
+            <Label Content="Trajectory" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,0,0,0"/>
+            <TextBox TextWrapping="Wrap" Text="{Binding Trajectory}" VerticalAlignment="Top" Margin="5,0"/>
+            <Label Content="Distance" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,0,0,0"/>
+            <TextBox TextWrapping="Wrap" Text="{Binding Distance}" VerticalAlignment="Top" Margin="5,0"/>
+            <Button Content="Play ball!!!" VerticalAlignment="Top" Click="Button_Click" Margin="5"/>
+        </StackPanel>
+
+        <StackPanel Grid.Column="1" Grid.ColumnSpan="2" Margin="5">
+            <Label Content="Pitcher says"/>
+            <ListView ItemsSource="{Binding PitcherSays, Mode=OneWay}" MinHeight="50"/>
+        </StackPanel>
+        <StackPanel Grid.Column="1" Grid.Row="1" Grid.RowSpan="2" Grid.ColumnSpan="2" Margin="5">
+            <Label Content="Fan says"/>
+            <ListView MinHeight="50" ItemsSource="{Binding FanSays, Mode=OneWay}" />
+        </StackPanel>
+
+    </Grid>
+</Window>
